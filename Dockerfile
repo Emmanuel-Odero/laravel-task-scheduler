@@ -7,7 +7,7 @@ RUN curl -s -f -L -o /tmp/dockerize.tar.gz https://github.com/jwilder/dockerize/
     && tar -C /usr/local/bin -xzvf /tmp/dockerize.tar.gz \
     && rm /tmp/dockerize.tar.gz
 
-# Install Composer
+# Install Cologin?next=%2Fmposer
 ENV COMPOSER_VERSION 2.1.5
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=$COMPOSER_VERSION
@@ -42,6 +42,5 @@ RUN apt-get update \
     && docker-php-ext-enable redis \
     && rm -rf /var/lib/apt/lists/*;
 
-WORKDIR /usr/src/app
-
+WORKDIR /
 RUN chown -R www-data:www-data .
