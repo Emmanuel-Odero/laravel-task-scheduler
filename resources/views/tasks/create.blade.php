@@ -28,6 +28,10 @@
                             <label>Cron Expression</label>
                             <input type="text" name="expression" class="form-control" value="*****">
                         </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="text" name="notification_email" class="form-control">
+                        </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="dont_overlap" value="1">
                             <label for="" class="form-check-label">Don't Overlap</label>
