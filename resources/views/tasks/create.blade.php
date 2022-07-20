@@ -26,7 +26,7 @@
                         </div>
                         <div class="form-group">
                             <label>Cron Expression</label>
-                            <input type="text" name="expression" class="form-control" value="*****">
+                            <input type="text" name="expression" class="form-control" value="* * * * *">
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
