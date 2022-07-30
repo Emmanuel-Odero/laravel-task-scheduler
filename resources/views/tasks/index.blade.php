@@ -26,7 +26,7 @@
                         <tbody>
                             @foreach ($tasks as $task)
                                 <tr>
-                                    <td>{{ $task->description }}</td>
+                                    <td><a href="{{ route(tasks.edit, $task->id) }}">{{ $task->description }}</a></td>
                                     <td>{{ $task->last_run }}</td>
                                     <td>{{ $task->Avarage_runtime }}</td>
                                     <td>{{ $task->next_run }}</td>
